@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="13px" viewBox="0 0 32 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow_close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu_360" transform="translate(-299.000000, -1430.000000)" stroke-width="2" stroke="#C1D7E6">
+            <g id="trip" transform="translate(0.000000, 1064.000000)">
+                <g id="tabl" transform="translate(2.000000, 329.000000)">
+                    <g id="closed">
+                        <g id="1" transform="translate(0.000000, 17.000000)">
+                            <polyline id="arrow_close" transform="translate(313.000000, 26.988358) scale(1, -1) translate(-313.000000, -26.988358) " points="298 22 313.152803 31.9767158 328 22"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.699999988">
+        <g id="landing_1440" transform="translate(-1236.000000, -39.000000)" fill-rule="nonzero" fill="#C1D7E6">
+            <g id="шапка">
+                <g id="social" transform="translate(1236.000000, 39.000000)">
+                    <path d="M4.03628333,4.29906905 L6.26448333,4.29906905 L6.10907143,6.24371429 L4.03625238,6.24371429 L4.03625238,13 L1.41808333,13 L1.41808333,6.24368333 L0.0207380952,6.24368333 L0.0207380952,4.2990381 L1.41808333,4.2990381 L1.41808333,2.99210476 C1.41808333,2.41713333 1.43325,1.52818095 1.86800714,0.977754762 C2.32613333,0.395788095 2.95530238,0 4.03628333,0 C5.79818571,0 6.54110476,0.24115 6.54110476,0.24115 L6.19165238,2.23290476 C6.19165238,2.23290476 5.60968571,2.07086905 5.06622381,2.07086905 C4.52282381,2.07086905 4.03631429,2.25745 4.03631429,2.78060714 L4.03631429,4.29906905 L4.03628333,4.29906905 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
