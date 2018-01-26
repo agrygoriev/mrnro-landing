@@ -4,14 +4,10 @@
     <meta charset="UTF-8">
     <title>Marinero landing</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!--<link rel="stylesheet" href="css/jquery.fancybox.css">-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700&subset=latin,cyrillic' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 <div class="overlay"></div>
@@ -19,11 +15,17 @@
     <ul class="main-menu">
         <li class="main-menu-item logo" id="go-home">
             <a href="/">
-                <img src="images/logo_marinero.svg" alt="Marinero">
+                <img src="img/landing/logo_marinero.svg" alt="Marinero">
             </a>
         </li>
         <li class="main-menu-item" id="menu-booking">
             <a class="main-menu-link" href="#booking">Забронировать место</a>
+        </li>
+        <li class="main-menu-item" id="menu-route">
+            <a href="/route.html" class="main-menu-link">Маршрут</a>
+        </li>
+        <li class="main-menu-item" id="menu-logbook">
+            <a href="/logbook.html" class="main-menu-link">Бортовой журнал</a>
         </li>
         <li class="main-menu-item" id="menu-contacts">
             <a class="main-menu-link" href="#contacts">Контакты</a>
@@ -64,11 +66,9 @@
             </div>
         </div>
         <ul>
-            <li><a href="#route">Маршрут путешествия</a></li>
-            <li><a href="#select-part">Выбрать этап</a></li>
-            <li><a href="#our-team">Наша команда</a></li>
-            <li><a href="#our-yacht">Наша яхта</a></li>
-            <li><a href="#other-journeys">Другие путешествия</a></li>
+            <li><a href="#go-home">Главная</a></li>
+            <li><a href="/route.html">Маршрут путешествия</a></li>
+            <li><a href="/logbook.html">Бортовой журнал</a></li>
             <li><a href="#contacts">Контакты</a></li>
             <li><a class="btn primary h60" href="#booking">Забронировать место</a></li>
             <li><a href="mailto:marineroUA@gmail.com">marineroua@gmail.com</a></li>
@@ -77,13 +77,13 @@
         </ul>
     </nav>
 </nav>
-<header class="main-header" style="background: url(images/home-top.jpg) no-repeat;background-size: cover;background-position: center;">
+<header class="main-header" style="background: url(./img/landing/home-top.jpg) no-repeat;background-size: cover;background-position: center;">
 
     <div class="header-gradient"></div>
 
     <div class="content-block-centered landing-content clearfix">
         <a href="/" class="logo">
-            <img src="images/logo_marinero.svg" alt="Marinero - надышаться можно только ветром!">
+            <img src="img/landing/logo_marinero.svg" alt="Marinero - надышаться можно только ветром!">
         </a>
         <h1 class="slogan">Marinero объявляет<wbr> о новом<wbr> грандиозном <wbr> проекте!</h1>
         <p>Отправляемся в плавание по следам Колумба, Дрейка и Магеллана. Поборемся за победу в крупнейшей регате Карибского моря, посетим удивительные острова и нереальной красоты пляжи, пройдем путь длиною в 10 000 миль. </p>
@@ -94,487 +94,132 @@
         </div>
     </div>
     <div class="video-container">
-        <video class="hidden-video" autoplay loop muted poster="images/home-top.jpg">
-            <source src="images/landclip1v2.mp4" type="video/mp4">
-            <img src="images/home-top.jpg" alt="Marinero - надышаться можно только ветром!">
+        <video class="hidden-video" autoplay loop muted poster="img/landing/home-top.jpg">
+            <source src="img/landing/landclip1v2.mp4" type="video/mp4">
+            <img src="img/landing/home-top.jpg" alt="Marinero - надышаться можно только ветром!">
         </video>
     </div>
     <a class="arrow-down bounce" href="#route">
     </a>
 
 </header>
-<main>
+<main class="route">
     <section class="description">
         <p>Наше грандиозное путешествие состоит из 10 этапов, присоединяйтесь к нам на любом из них. Но помните, что мы возьмем с собой не больше 8 участников.</p>
         <p>Наше путешествие состоит из 10 этапов, каждый из которых отличается уровнем сложности, благодаря чему принять участие в грандиозном путешествии могут как опытные яхтсмены, так и новички. Некоторые из этапов из-за возможных суровых погодных условий больше подойдут яхтсменам с опытом, в частности, это этапы 2, 6 и 7. Участие в остальных – это отличная возможность хорошо провести время с друзьями или семьей.</p>
+        <img src="img/landing/map.jpg" alt="Маршрут путешествия">
     </section>
-    <section class="content-separator" id="route">
-        <h2>Маршрут путешествия</h2>
+    <section class="content-separator" id="logbook">
+        <h2>Бортовой журнал</h2>
     </section>
-    <section class=map>
-        <p>Ниже вы найдете информацию о регионе, периоде и протяженности каждого из этапов путешествия.<br> Выберите, на каком из этапов вы хотите к нам присоединиться.</p>
-        <img src="images/map.jpg" alt="Маршрут путешествия">
-    </section>
-    <section class="content-block-centered race-schedule">
-        <div class="curs-content">
-            <table class="schedule-table">
-                <thead class="heading">
-                <tr class="row">
-                    <th class="cell first">№</th>
-                    <th class="cell second">регион</th>
-                    <th class="cell third">период</th>
-                    <th class="cell fourth">дистанция, морских миль</th>
+    <section class="route__place">
+        <ul class="route__place__slider">
+            <li><img class="route__place__slider_img" src="img/landing/fethiye.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/2.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/gocek4.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/dal_1.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/Marmarisnightlife.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/ciftlik1.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/Bozburun.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/12a.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/turkish.jpg" alt=""/></li>
+        </ul>
+        <div class="route__place__desc-block">
+            <a class="route__place__desc-block_link">
+                КАНАРСКИЕ ОСТРОВА. GRAN CANARIA.
+            </a>
+            <table class="route__place__desc-block_table">
+                <tbody>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">дата: </span>17.03.2018</td>
                 </tr>
-                </thead>
-                <tbody class="body">
-                <tr class="content">
-                    <td class="cell first">1</td>
-                    <td class="cell second">Канарские острова</td>
-                    <td class="cell third">27.01 - 03.02.2018</td>
-                    <td class="cell fourth">250</td>
-
+                <tr class="content ">
+                    <td class="cell"><span class="bold">координаты: </span>19.188502, -67.123900</td>
                 </tr>
-                <tr class="content">
-                    <td class="cell first">2</td>
-                    <td class="cell second">Канарские о-ва - Карибские о-ва</td>
-                    <td class="cell third">03.02 - 24.02.2018</td>
-                    <td class="cell fourth">2 700</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">3</td>
-                    <td class="cell second">Saint Martin Heineken Regatta</td>
-                    <td class="cell third">25.02 - 06.03.2018</td>
-                    <td class="cell fourth">300</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">4</td>
-                    <td class="cell second">Saint Martin - BVI - Dominicana</td>
-                    <td class="cell third">06.03-17.03.2018</td>
-                    <td class="cell fourth">340</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">5</td>
-                    <td class="cell second">Доминикана- Багамы - Флорида (Маями)</td>
-                    <td class="cell third">17.03-27.03.2018</td>
-                    <td class="cell fourth">800</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">6</td>
-                    <td class="cell second">Майами - Багамы - Бермуды</td>
-                    <td class="cell third">27.03 - 09.04.2018</td>
-                    <td class="cell fourth">1 300</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">7</td>
-                    <td class="cell second">Бермуды - Азоры</td>
-                    <td class="cell third">09.04-23.04.2018</td>
-                    <td class="cell fourth">2 100</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">8</td>
-                    <td class="cell second">Азоры</td>
-                    <td class="cell third">23.04-30.04.2018</td>
-                    <td class="cell fourth">200</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">9</td>
-                    <td class="cell second">Азоры - Мадейра - Малага</td>
-                    <td class="cell third">30.04-13.05.2018</td>
-                    <td class="cell fourth">1 500</td>
-                </tr>
-                <tr class="content">
-                    <td class="cell first">10</td>
-                    <td class="cell second">Малага - Балеары</td>
-                    <td class="cell third">13.05-22.05.2018</td>
-                    <td class="cell fourth">500</td>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">пройдено: </span>340 морских миль</td>
                 </tr>
                 </tbody>
             </table>
+            <div class="route__place__desc-block_desc-text">
+                Яхтинг - идеальный способ для путешествия по вечнозеленым Канарским островам! Пока в наших широтах бушует зима, на Канарах тепло и солнечно. <br>
+                За неделю мы сможем увидеть несколько островов и посетить самые интересные места. <br>
+                А учитывая то, что на Канарах постоянно мигрируют стаи дельфинов, китов и даже кашалотов - это еще и прекрасный шанс увидеть таких удивительных существ на свободе!
+            </div>
+            <a href="/place.html" class="route__place__desc-block_btn btn secondary h56 route">Подробнее</a>
         </div>
     </section>
-    <section class="content-block-centered race-schedule-mobile">
-        <div class="mobile-table-separator"></div>
-        <div class="mobile-table-content">
-            <div class="row-1">
-                <div class="column-1">
-                    <div class="column-header">
-                        №
-                    </div>
-                    <div class="column-content">
-                        1
-                    </div>
-                </div>
-                <div class="column-2">
-                    <div class="column-header">
-                        регион
-                    </div>
-                    <div class="column-content">
-                        Канарские острова
-                    </div>
-                </div>
-                <div class="column-3">
-                    <span class="arrow open-arrow"></span>
-                </div>
+    <div class="route__divider"></div>
+    <section class="route__place no-photo">
+        <ul class="route__place__slider">
+        </ul>
+        <div class="route__place__desc-block">
+            <a class="route__place__desc-block_link">
+                КАНАРСКИЕ ОСТРОВА. GRAN CANARIA.
+            </a>
+            <table class="route__place__desc-block_table">
+                <tbody>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">дата: </span>17.03.2018</td>
+                </tr>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">координаты: </span>19.188502, -67.123900</td>
+                </tr>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">пройдено: </span>340 морских миль</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="route__place__desc-block_desc-text">
+                Яхтинг - идеальный способ для путешествия по вечнозеленым Канарским островам! Пока в наших широтах бушует зима, на Канарах тепло и солнечно. <br>
+                За неделю мы сможем увидеть несколько островов и посетить самые интересные места. <br>
+                А учитывая то, что на Канарах постоянно мигрируют стаи дельфинов, китов и даже кашалотов - это еще и прекрасный шанс увидеть таких удивительных существ на свободе!
             </div>
-            <div class="row-2">
-                <div class="column-1">
-                    <div class="column-header"></div>
-                    <div class="column-content"></div>
-                </div>
-                <div class="column-2">
-                    <div class="column-header">
-                        период
-                    </div>
-                    <div class="column-content">
-                        27.01 - 03.02.2018
-                    </div>
-                </div>
-                <div class="column-3">
-                    <div class="column-header">
-
-                    </div>
-                </div>
-            </div>
-            <div class="row-3">
-                <div class="column-1"></div>
-                <div class="column-2">
-                    <div class="column-header">
-                        дистанция, морских миль
-                    </div>
-                    <div class="column-content">
-                        250
-                    </div>
-                </div>
-                <div class="column-3"></div>
-            </div>
+            <a href="/place.html" class="route__place__desc-block_btn btn secondary h56 route">Подробнее</a>
         </div>
-        <hr class="mobile-table-separator">
-        <div class="mobile-table-content">
-            <div class="row-1">
-                <div class="column-1">
-                    <div class="column-header">
-                        №
-                    </div>
-                    <div class="column-content">
-                        2
-                    </div>
-                </div>
-                <div class="column-2">
-                    <div class="column-header">
-                        регион
-                    </div>
-                    <div class="column-content">
-                        Канарские о-ва - <wbr> Карибские о-ва
-                    </div>
-                </div>
-                <div class="column-3">
-                    <span class="arrow open-arrow"></span>
-                </div>
-            </div>
-            <div class="row-2">
-                <div class="column-1">
-                    <div class="column-header"></div>
-                    <div class="column-content"></div>
-                </div>
-                <div class="column-2">
-                    <div class="column-header">
-                        период
-                    </div>
-                    <div class="column-content">
-                        03.02 - 24.02.2018
-                    </div>
-                </div>
-                <div class="column-3">
-                    <div class="column-header">
-
-                    </div>
-                </div>
-            </div>
-            <div class="row-3">
-                <div class="column-1"></div>
-                <div class="column-2">
-                    <div class="column-header">
-                        дистанция, морских миль
-                    </div>
-                    <div class="column-content">
-                        2 700
-                    </div>
-                </div>
-                <div class="column-3"></div>
-            </div>
-        </div>
-        <hr class="mobile-table-separator">
     </section>
-    <section class="content-separator" id="select-part">
-        <h2>Выберите этап</h2>
+    <div class="route__divider"></div>
+    <section class="route__place">
+        <ul class="route__place__slider">
+            <li><img class="route__place__slider_img" src="img/landing/fethiye.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/2.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/gocek4.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/dal_1.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/Marmarisnightlife.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/ciftlik1.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/Bozburun.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/12a.jpg" alt=""/></li>
+            <li><img class="route__place__slider_img" src="img/landing/turkish.jpg" alt=""/></li>
+        </ul>
+        <div class="route__place__desc-block">
+            <a class="route__place__desc-block_link">
+                КАНАРСКИЕ ОСТРОВА. GRAN CANARIA.
+            </a>
+            <table class="route__place__desc-block_table">
+                <tbody>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">дата: </span>17.03.2018</td>
+                </tr>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">координаты: </span>19.188502, -67.123900</td>
+                </tr>
+                <tr class="content ">
+                    <td class="cell"><span class="bold">пройдено: </span>340 морских миль</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="route__place__desc-block_desc-text">
+                Яхтинг - идеальный способ для путешествия по вечнозеленым Канарским островам! Пока в наших широтах бушует зима, на Канарах тепло и солнечно. <br>
+                За неделю мы сможем увидеть несколько островов и посетить самые интересные места. <br>
+                А учитывая то, что на Канарах постоянно мигрируют стаи дельфинов, китов и даже кашалотов - это еще и прекрасный шанс увидеть таких удивительных существ на свободе!
+            </div>
+            <a href="/place.html" class="route__place__desc-block_btn btn secondary h56 route">Подробнее</a>
+        </div>
     </section>
-    <section class="content-block-centered curs-info-block">
-        <div class="curs-content clearfix curs-content-desktop">
-            <div class="curs-data fl-right">
-                <div class="column-min-height">
-                    <div class="name">
-                        <a href="http://mrnro.com/travel/artfleet/" class="name-link">Ukrainian Art Fleet Turkey</a>
-                    </div>
-                    <div class="trip-description">
-                        Ми продовжуємо розвивати нову культуру – сучасного українського авангарду, нової модернової української нації. <br />
-                        В колі діячів сучасної української культури, в компанії активних, цікавих, енергійних  людей ми вирушаємо до Турції! <br />
-                        Наша арт-флотилія  пройде найбільш живописними маршрутами Егейського моря біля узбережжя Турції. <br />
-                        Активності під час яхт-туру: регати, арт-походи,турецький хамам, водні розваги та пляжні вечірки.
-                    </div>
-                    <table class="trip-table _tabl" cellpadding="0" cellspacing="0">
-                        <tbody>
-                        <tr class="content ">
-                            <td class="cell _lbl">дати</td>
-                            <td class="cell">21.10-28.10.17</td>
-                        </tr>
-                        <tr class="content ">
-                            <td class="cell _lbl">морських миль</td>
-                            <td class="cell">150</td>
-                        </tr>
-                        <tr class="content _lst">
-                            <td class="cell _lbl">вартість з людини</td>
-                            <td class="cell">від 490 євро</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <form id="form1" action="#form_order">
-                    <div class="form-enter-wrapper">
-                        <div class="inner-input-wrapper name-input">
-                            <input class="inner-input" type="text" id="form1_name1" name="name1" placeholder="Иван Иванов *" />
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <div class="static-mask">+38</div>
-                            <input class="inner-input phone-number" id="form1_phone1" type="text" name="phone1" />
-                        </div>
-                    </div>
-                    <input type="hidden" name="form1_etap" id="form1_etap" value="Канарские острова">
-                    <button id="form1_submit" class="btn primary h56">Забронировать место</button>
-                    <a href="http://mrnro.com/travel/" class="btn secondary h56 ">Узнать больше</a>
-                </form>
-            </div>
-            <div class="image-block travel-slider-container fl-left">
-                <ul class="travel-slider">
-                    <li><img class="curs-img" src="images/fethiye.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/2.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/gocek4.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/dal_1.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/Marmarisnightlife.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/ciftlik1.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/Bozburun.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/12a.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/turkish.jpg" alt=""/></li>
-                </ul>
-                <div class="stops-block fl-right">
-                    <h3>Остановки:</h3>
-                    <div class="stop-names">
-                        G&#246;cek - Dalyan - Ekincik  - Marmaris - &#199;iftlik - Bozburun - Fethiye
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="curs-content clearfix curs-content-mobile">
-            <div class="image-block travel-slider-container fl-left">
-                  <ul class="travel-slider">
-                            <li><img class="curs-img" src="images/turkish.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/fethiye.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/2.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/gocek4.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/dal_1.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/Marmarisnightlife.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/ciftlik1.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/Bozburun.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/12a.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/turkish.jpg" alt=""></li>
-                            <li><img class="curs-img" src="images/fethiye.jpg" alt=""></li>
-                        </ul>
-            </div>
-            <div class="curs-data fl-right">
-                <div class="column-min-height">
-                    <div class="name">
-                        <a href="http://mrnro.com/travel/artfleet/" class="name-link">Ukrainian Art Fleet Turkey</a>
-                    </div>
-                    <div class="trip-description">
-                        Ми продовжуємо розвивати нову культуру – сучасного українського авангарду, нової модернової української нації. <br>
-                        В колі діячів сучасної української культури, в компанії активних, цікавих, енергійних  людей ми вирушаємо до Турції! <br>
-                        Наша арт-флотилія  пройде найбільш живописними маршрутами Егейського моря біля узбережжя Турції. <br>
-                        Активності під час яхт-туру: регати, арт-походи,турецький хамам, водні розваги та пляжні вечірки.
-                    </div>
-                    <table class="trip-table _tabl" cellpadding="0" cellspacing="0">
-                        <tbody>
-                        <tr class="content ">
-                            <td class="cell _lbl">дати</td>
-                            <td class="cell">21.10-28.10.17</td>
-                        </tr>
-                        <tr class="content ">
-                            <td class="cell _lbl">морських миль</td>
-                            <td class="cell">150</td>
-                        </tr>
-                        <tr class="content _lst">
-                            <td class="cell _lbl">вартість з людини</td>
-                            <td class="cell">від 490 євро</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="stops-block fl-right">
-                    <h3>Остановки:</h3>
-                    <div class="stop-names">
-                        Göcek - Dalyan - Ekincik  - Marmaris - Çiftlik - Bozburun - Fethiye
-                    </div>
-                </div>
-                <form id="form1_mobile" action="#form_order">
-                    <a href="http://mrnro.com/travel/" class="btn secondary h56 ">Узнать больше</a>
-                    <div class="form-enter-wrapper">
-                        <div class="inner-input-wrapper name-input">
-                            <input class="inner-input" id="form1_mobile_name1" type="text" name="name" placeholder="Иван Иванов *">
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <div class="static-mask">+38</div>
-                            <input class="inner-input phone-number" id="form1_mobile_phone1" type="text" name="phone" placeholder="(011) 22 333 44 *" maxlength="15">
-                        </div>
-                    </div>
-                    <input type="hidden" name="etap" id="form1_etap_mobile" value="Канарские острова">
-                    <button id="form1_mobile_submit" class="btn primary h56">Забронировать место</button>
-                </form>
-            </div>
-        </div>
-        <div class="inner-separator"></div>
-        <div class="curs-content clearfix curs-content-desktop">
-            <div class="curs-data fl-right">
-                <div class="column-min-height">
-                    <div class="name">
-                        <a href="http://mrnro.com/travel/artfleet/" class="name-link">Ukrainian Art Fleet Turkey</a>
-                    </div>
-                    <div class="trip-description">
-                        Ми продовжуємо розвивати нову культуру – сучасного українського авангарду, нової модернової української нації. <br />
-                        В колі діячів сучасної української культури, в компанії активних, цікавих, енергійних  людей ми вирушаємо до Турції! <br />
-                        Наша арт-флотилія  пройде найбільш живописними маршрутами Егейського моря біля узбережжя Турції. <br />
-                        Активності під час яхт-туру: регати, арт-походи,турецький хамам, водні розваги та пляжні вечірки.
-                    </div>
-                    <table class="trip-table _tabl" cellpadding="0" cellspacing="0">
-                        <tbody>
-                        <tr class="content ">
-                            <td class="cell _lbl">дати</td>
-                            <td class="cell">21.10-28.10.17</td>
-                        </tr>
-                        <tr class="content ">
-                            <td class="cell _lbl">морських миль</td>
-                            <td class="cell">150</td>
-                        </tr>
-                        <tr class="content _lst">
-                            <td class="cell _lbl">вартість з людини</td>
-                            <td class="cell">від 490 євро</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <form id="form2" action="#form_order">
-                    <div class="form-enter-wrapper">
-                        <div class="inner-input-wrapper name-input">
-                            <input class="inner-input" type="text" id="form2_name1" name="name1" placeholder="Иван Иванов *" />
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <div class="static-mask">+38</div>
-                            <input class="inner-input phone-number" id="form2_phone1" type="text" name="phone1" />
-                        </div>
-                    </div>
-                    <input type="hidden" name="form2_etap" id="form2_etap" value="Канарские о-ва - Карибские о-ва">
-                    <button id="form2_submit" class="btn primary h56">Забронировать место</button>
-                    <a href="http://mrnro.com/travel/" class="btn secondary h56 ">Узнать больше</a>
-                </form>
-            </div>
-            <div class="image-block travel-slider-container fl-left">
-                <ul class="travel-slider">
-                    <li><img class="curs-img" src="images/fethiye.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/2.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/gocek4.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/dal_1.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/Marmarisnightlife.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/ciftlik1.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/Bozburun.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/12a.jpg" alt=""/></li>
-                    <li><img class="curs-img" src="images/turkish.jpg" alt=""/></li>
-                </ul>
-                <div class="stops-block fl-right">
-                    <h3>Остановки:</h3>
-                    <div class="stop-names">
-                        G&#246;cek - Dalyan - Ekincik  - Marmaris - &#199;iftlik - Bozburun - Fethiye
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="curs-content clearfix curs-content-mobile">
-            <div class="image-block travel-slider-container fl-left">
-                <ul class="travel-slider">
-                    <li><img class="curs-img" src="images/turkish.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/fethiye.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/2.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/19059837_1861855190730586_7434970038810072387_n.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/gocek4.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/dal_1.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/Marmarisnightlife.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/ciftlik1.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/Bozburun.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/12a.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/turkish.jpg" alt=""></li>
-                    <li><img class="curs-img" src="images/fethiye.jpg" alt=""></li>
-                </ul>
-            </div>
-            <div class="curs-data fl-right">
-                <div class="column-min-height">
-                    <div class="name">
-                        <a href="http://mrnro.com/travel/artfleet/" class="name-link">Ukrainian Art Fleet Turkey</a>
-                    </div>
-                    <div class="trip-description">
-                        Ми продовжуємо розвивати нову культуру – сучасного українського авангарду, нової модернової української нації. <br>
-                        В колі діячів сучасної української культури, в компанії активних, цікавих, енергійних  людей ми вирушаємо до Турції! <br>
-                        Наша арт-флотилія  пройде найбільш живописними маршрутами Егейського моря біля узбережжя Турції. <br>
-                        Активності під час яхт-туру: регати, арт-походи,турецький хамам, водні розваги та пляжні вечірки.
-                    </div>
-                    <table class="trip-table _tabl" cellpadding="0" cellspacing="0">
-                        <tbody>
-                        <tr class="content ">
-                            <td class="cell _lbl">дати</td>
-                            <td class="cell">21.10-28.10.17</td>
-                        </tr>
-                        <tr class="content ">
-                            <td class="cell _lbl">морських миль</td>
-                            <td class="cell">150</td>
-                        </tr>
-                        <tr class="content _lst">
-                            <td class="cell _lbl">вартість з людини</td>
-                            <td class="cell">від 490 євро</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="stops-block fl-right">
-                    <h3>Остановки:</h3>
-                    <div class="stop-names">
-                        Göcek - Dalyan - Ekincik  - Marmaris - Çiftlik - Bozburun - Fethiye
-                    </div>
-                </div>
-                <form id="form2_mobile" action="#form_order">
-                    <a href="http://mrnro.com/travel/" class="btn secondary h56 ">Узнать больше</a>
-                    <div class="form-enter-wrapper">
-                        <div class="inner-input-wrapper name-input">
-                            <input class="inner-input" id="form2_name1_mobile" type="text" name="name" placeholder="Иван Иванов *">
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <div class="static-mask">+38</div>
-                            <input class="inner-input phone-number" id="form2_phone1_mobile" type="text" name="phone" placeholder="(011) 22 333 44 *" maxlength="15">
-                        </div>
-                    </div>
-                    <input type="hidden" name="etap" id="form2_etap_mobile" value="Канарские о-ва - Карибские о-ва">
-                    <button id="form2_submit_mobile" class="btn primary h56">Забронировать место</button>
-                </form>
-            </div>
-        </div>
-        <div class="inner-separator"></div>
+    <section class="buttons-centered">
+        <a href="/logbook.html" class="btn primary h60">Бортовой журнал</a>
     </section>
     <section class="content-separator" id="our-team">
         <h2>Наша команда</h2>
@@ -582,180 +227,59 @@
     <section class="content-block-centered instructors-container">
         <div class="instructors-wrapper">
             <div class="instructor-info">
-                <img class="instructor-image" src="images/potocki.png" alt="Дмитрий Потоцкий" />
+                <img class="instructor-image" src="img/landing/potocki.png" alt="Дмитрий Потоцкий" />
                 <div class="name">Дмитрий Потоцкий</div>
                 <div class="instructor-text">
                     Капитан – известный яхтсмен, бывалый капитан с неприлично длинным стажем и опытом, инструктор-преподаватель
                 </div>
+                <a href="/dossier.html" class="dossier-link">Личное дело</a>
             </div>
             <div class="instructor-info">
-                <img class="instructor-image" src="images/nepsha.png" alt="Павел Непша" />
+                <img class="instructor-image" src="img/landing/nepsha.png" alt="Павел Непша" />
                 <div class="name">Павел Непша</div>
                 <div class="instructor-text">
                     cо-шкипер – опытный, педантичный и ответственный капитан
                 </div>
+                <a href="/dossier.html" class="dossier-link">Личное дело</a>
             </div>
             <div class="instructor-info">
-                <img class="instructor-image" src="images/chebotareva.png" alt="Катя Чеботарева" />
+                <img class="instructor-image" src="img/landing/chebotareva.png" alt="Катя Чеботарева" />
                 <div class="name">Катя Чеботарева</div>
                 <div class="instructor-text">
                     Строгий, но справедливый боцман, по совместительству бортовой врач (психиатр, так что лучше вести себя хорошо), и по совместительству капитан женского борта crêpe of madness
                 </div>
+                <a href="/dossier.html" class="dossier-link">Личное дело</a>
             </div>
             <div class="instructor-info">
-                <img class="instructor-image" src="images/tsypko_.jpg" alt="Олег Ципко" />
+                <img class="instructor-image" src="img/landing/tsypko_.jpg" alt="Олег Ципко" />
                 <div class="name">Олег Ципко</div>
                 <div class="instructor-text">
-                    Чемпион Украины в международном классе яхт "Star". Победитель Кубка Украины в олимпийском классе яхт"Finn". Вице-чемпион международных регат в классе яхт "Etchells".
+                    Чемпион Украины в международном классе яхт "Star". Победитель Кубка Украины в олимпийском классе яхт "Finn". Вице-чемпион международных регат в классе яхт "Etchells".
                 </div>
+                <a href="/dossier.html" class="dossier-link">Личное дело</a>
             </div>
             <div class="instructor-info">
-                <img class="instructor-image"src="images/tchalla_.jpg" alt="Тчалла Маршалл, он же Джек Воробей" />
+                <img class="instructor-image"src="img/landing/tchalla_.jpg" alt="Тчалла Маршалл, он же Джек Воробей" />
                 <div class="name">Тчалла Маршалл, он же Джек Воробей</div>
                 <div class="instructor-text">
                     Участник трансатлантических походов, капитан, регги музыкант и консультант школы Маринеро по Карибскому бассейну
                 </div>
+                <a href="/dossier.html" class="dossier-link">Личное дело</a>
             </div>
         </div>
     </section>
-    <section class="content-separator" id="our-yacht">
-        <h2>Наша яхта</h2>
-    </section>
-    <section class="content-block-centered photo-report-block yacht-settings">
-        <div class="photo-report-wrapper clearfix">
-            <a class="big-image fl-left fancybox" data-fancybox="gallery_7" href="images/boat/SO519-1.jpg" title="">
-                <img src="images/boat/SO519-1.jpg"/>
-            </a>
-            <div class="two-images fl-left">
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519-2.jpg" title="" >
-                    <img src="images/boat/SO519-2.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519-3.jpg" title="" >
-                    <img src="images/boat/SO519-3.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519-4.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519-4.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519-5.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519-5.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519-6.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519-6.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519int-1.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519int-1.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519int-2.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519int-2.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519int-3.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519int-3.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519int-4.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519int-4.jpg"/>
-                </a>
-                <a class="small-image fancybox" data-fancybox="gallery_7" href="images/boat/SO519int-5.jpg" title="" style="display: none;">
-                    <img src="images/boat/SO519int-5.jpg"/>
-                </a>
-            </div>
-            <div class="about-yacht">
-                <h6 class="yacht fl-left">
-                    Яхта
-                </h6>
-                <h6 class="yacht-model fl-left">
-                    Sun Odyssey 519
-                </h6>
-                <div class="yacht-desc fl-left">
-                    2016 года выпуска, оборудованная по последнему слову техники и инженерной мысли, как нельзя лучше подходящая для такого сложного и длительного похода.
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <section class="content-separator" id="booking">
         <h2>Забронировать место</h2>
     </section>
-    <section class="content-block-centered sign-form-block">
-        <div class="sign-form-wrapper">
-            <div id="order_cont">
-                <div class="sign-form-pretext">
-                    Оставьте, пожалуйста, свои данные.<br>Мы скоро с вами свяжемся.
-                    <p class="etap">этап</p>
-                </div>
-                <form id="form_order" action="/ajax/" method="post">
-                    <input type="hidden" id="form_event_type" name="form_event_type" value="event_travel" />
-                    <input type="hidden" name="section" value="Путешествия - Греция. Эгейское море" />
-                    <div class="date-line-input clearfix">
-                        <div class="race-name custom-select">
-                            <select class="_ordinary" name="offer" id="ordinary">
-                                <option data-people="Канарские острова" selected="" value="Канарские острова">
-                                    Канарские острова
-                                </option>
-                                <option data-people="Канарские о-ва - Карибские о-ва" value="Канарские о-ва - Карибские о-ва">
-                                    Канарские о-ва - Карибские о-ва
-                                </option>
-                                <option data-people="Saint Martin Heineken Regatta" value="Saint Martin Heineken Regatta">
-                                    Saint Martin Heineken Regatta
-                                </option>
-                                <option data-people="Saint Martin - BVI - Dominicana" value="Saint Martin - BVI - Dominicana">
-                                    Saint Martin - BVI - Dominicana
-                                </option>
-                                <option data-people="Доминикана- Багамы - Флорида (Майами)" value="Доминикана- Багамы - Флорида (Майами)">
-                                    Доминикана- Багамы - Флорида (Майами)
-                                </option>
-                                <option data-people="Майами - Багамы - Бермуды" value="Майами - Багамы - Бермуды">
-                                    Майами - Багамы - Бермуды
-                                </option>
-                                <option data-people="Бермуды - Азоры" value="Бермуды - Азоры">
-                                    Бермуды - Азоры
-                                </option>
-                                <option data-people="Азоры" value="Азоры">
-                                    Азоры
-                                </option>
-                                <option data-people="Азоры - Мадейра - Малага" value="Азоры - Мадейра - Малага">
-                                    Азоры - Мадейра - Малага
-                                </option>
-                                <option data-people="Малага - Балеары" value="Малага - Балеары">
-                                    Малага - Балеары
-                                </option>
-
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-enter-wrapper">
-                        <div class="inner-input-wrapper name-input">
-                            <input id="name" name="name" class="inner-input require" type="text" placeholder="Иван Иванов *" value="" />
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <div class="static-mask">+38</div>
-                            <input id="phone" name="phone" class="inner-input phone-number require" type="text" value="" />
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <input id="email" name="email" class="inner-input require" type="text" placeholder="E-mail *"/>
-                        </div>
-                        <div class="inner-input-wrapper">
-                            <input id="captcha" name="captcha" class="inner-input require" type="text" value="" placeholder="Код *" style="width: 60%; float: left;" />
-                            <img id="_cap" src="/" style="margin-top: 3px;">
-                        </div>
-                    </div>
-                    <button class="btn primary h56" onClick="return formSubmit('form_order')">Записаться</button>
-                </form>
-            </div>
+    <section class="content-block-centered">
+        <div class="booking-description">
+            <p>Наше грандиозное путешествие состоит из 10 этапов, присоединяйтесь к нам на любом из них.</p>
+            <p>Но помните, что мы возьмем с собой не больше 8 участников.</p>
+            <p>Спешите забронировать место!</p>
         </div>
-    </section>
-    <section class="content-separator" id="other-journeys">
-        <h2>Другие путешествия</h2>
-    </section>
-    <section class="more-journeys">
-        <div class="more-journeys-pretext">
-            <div class="sign-form-pretext">
-                Предлагаем ознакомиться с яхтенными путешествиями по другим маршрутам.
-            </div>
-            <a class="btn h60 read-more-button" href="/travel/">
-                узнать больше
-            </a>
+        <div class="buttons-centered">
+            <a href="#booking" class="btn primary h60">Забронировать место</a>
         </div>
     </section>
     <button class="btn-to-top" style="display: none;"></button>
@@ -785,44 +309,40 @@
                 <a href="mailto:marineroUA@gmail.com"><span itemprop="email">marineroUA@gmail.com</span></a>
             </div>
         </div>
-        <noindex>
-            <ul class="footer-partners-list">
-                <li class="partners-list-item">
-                    <a class="partners-list-link" href="http://www.iytworld.com/" target="_blank" rel="nofollow" title="International Yacht Training Worldwide">
-                        <img class="partners-list-image" src="images/iyt_logo_1_70.png" alt="IYT" />
-                    </a>
-                </li>
-                <li class="partners-list-item">
-                    <a class="partners-list-link" href="http://extremstyle.ua/" target="_blank" rel="nofollow" title="Екстрем Стайл">
-                        <img class="partners-list-image" src="images/extrem_logo_70.png" alt="Екстрем Стайл" />
-                    </a>
-                </li>
-                <li class="partners-list-item">
-                    <a class="partners-list-link" href="http://iyt.com.ua/" target="_blank" rel="nofollow" title="Yacht club Maxim marine">
-                        <img class="partners-list-image" src="images/maxim_logo_55.png" alt="Maxim marine" />
-                    </a>
-                </li>
-            </ul>
-        </noindex>
-
+        <ul class="footer-partners-list">
+            <li class="partners-list-item">
+                <a class="partners-list-link" href="http://www.iytworld.com/" target="_blank" rel="nofollow" title="International Yacht Training Worldwide">
+                    <img class="partners-list-image" src="img/landing/iyt_logo_1_70.png" alt="IYT" />
+                </a>
+            </li>
+            <li class="partners-list-item">
+                <a class="partners-list-link" href="http://extremstyle.ua/" target="_blank" rel="nofollow" title="Екстрем Стайл">
+                    <img class="partners-list-image" src="img/landing/extrem_logo_70.png" alt="Екстрем Стайл" />
+                </a>
+            </li>
+            <li class="partners-list-item">
+                <a class="partners-list-link" href="http://iyt.com.ua/" target="_blank" rel="nofollow" title="Yacht club Maxim marine">
+                    <img class="partners-list-image" src="img/landing/maxim_logo_55.png" alt="Maxim marine" />
+                </a>
+            </li>
+        </ul>
         <div class="copyright-text">
             © 2015-2017 <span itemprop="name">Marinero</span>, все права защищены<br/>
             <a href="/privacy/">Политика конфиденциальности</a></br>
-            <!--Создание сайта <a href="http://xpage.com.ua/" target="_blank">Xpage</a>-->
         </div>
     </section>
     <section class="footer-logo-wrapper">
         <a href="http://page.ua" class="footer-logo">
-            <img src="images/logo-footer.svg" alt="Page.ua">
+            <img src="img/landing/logo-footer.svg" alt="Page.ua">
         </a>
     </section>
 </footer>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!--<script src="js/jquery.fancybox.pack.js"></script>-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/landing.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<!--<script src="js/jquery.fancybox.pack.js"></script>-->
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/landing.js"></script>
 </body>
 </html>

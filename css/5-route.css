@@ -1,0 +1,217 @@
+.route-menu-wrapper {
+    padding: 10px 20px;
+    margin: 0 auto;
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+main.route,
+main.article,
+main.dossier {
+    margin-top: 0;
+}
+
+.curs-info-block .curs-data .secondary.route {
+    right: 0;
+    margin: 0;
+}
+.article__info-block,
+.dossier__info-block {
+	max-width: 780px;
+	margin: 0 auto 70px;
+}
+.dossier__info-block {
+	margin: 0 auto 30px;
+}
+.article__info-block_img,
+.dossier__info-block_img, {
+	margin-bottom: 30px;
+}
+.article__info-block_h2,
+.dossier__info-block_h2 {
+	font: 400 36px 'Open Sans', sans-serif;
+	line-height: 45px;
+	text-align: center;
+	color: #00a9db;
+	margin: 0 auto 30px;
+	text-transform: uppercase;
+}
+.article__info-block_table,
+.dossier__info-block_table {
+	max-width: 380px;
+	margin: 0 auto 30px;
+}
+.article__info-block_p,
+.dossier__info-block_p {
+	font: 400 15px 'Open Sans', sans-serif;
+	color: #5b5b5b;
+	line-height: 22px;
+	margin: 0 auto 30px;
+}
+.article__img-block {
+	max-width: 780px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.article__img-block__img-col {
+	width: 100%;
+	max-width: 435px;
+	margin: 0 22px 0 0;
+	display: flex;
+	flex-direction: column;
+}
+.article__img-block__img-col img:first-child {
+	margin-bottom: 17px;
+}
+.route__place {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto 30px;
+	display: flex;
+}
+.route__place__slider {
+    margin: 0 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 420px;
+    overflow: hidden;
+}
+.route__place__slider li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 750px;
+    height: 420px;
+}
+.bx-wrapper {
+	height: auto;
+}
+.route__place .bx-wrapper {
+    max-width: 750px;
+    width: 100%;
+    margin-right: 15px;
+}
+.route__place__slider_img {
+	width: 100%;
+	max-width: 750px;
+	height: 420px;
+	object-fit: cover;
+}
+.route__place__desc-block {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 374px;	
+}
+.route__place__desc-block_link {
+	font: 400 27px 'Open Sans', sans-serif;
+	position: relative;
+	display: inline-flex;
+    margin-left: 40px;
+    color: #00a9db;
+    margin-bottom: 15px;
+}
+.route__place__desc-block_link:before {
+    display: block;
+    content: " ";
+    background: url(../img/landing/anchor.svg) 50%/16px auto no-repeat;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px hsla(193,8%,46%,.5);
+    position: absolute;
+    left: -40px;
+    top: 5px;
+}
+.route__place__desc-block_table {
+    width: 100%;
+    border: 1px solid #c0d9e6;
+    margin-bottom: 15px;
+}
+.route__place__desc-block_table .content .cell {
+    font: 400 12px 'Open Sans', sans-serif;
+    line-height: 1;
+    color: #5b5b5b;
+    padding: 6px 30px;
+}
+.route__place__desc-block_table .content:first-child .cell {
+    padding-top: 12px;
+}
+.route__place__desc-block_table .content:last-child .cell {
+    padding-bottom: 12px;
+}
+.route__place__desc-block_desc-text {
+	font: 400 12px 'Open Sans', sans-serif;
+	color: #5b5b5b;
+	line-height: 1.5;
+}
+.route__place__desc-block_btn {
+	width: 100%;
+	margin-top: auto;
+}
+.route__divider {
+	display: block;
+	width: 93%;
+	height: 2px;
+	background: #c1d7e6;
+	margin: 0 auto 30px;
+}
+.route .buttons-centered {
+    margin: 0 auto;
+}
+
+/* Slider Controls */
+.route__place.no-photo > .bx-wrapper {
+	display: none;
+}
+.route__place.no-photo {
+	height: 420px;
+}
+.route__place.no-photo > .route__place__desc-block {
+	/*height: 420px;*/
+	max-width: 750px;
+}
+.bx-wrapper {
+    height: 423px;
+    position: relative;
+}
+.bx-next, .bx-prev {
+  position: absolute;
+  width: 45px;
+  height: 44px;
+  background-image: url(../img/landing/slider-travel.png);
+  top: 50%;
+  margin-top: -22px;
+  overflow: hidden;
+  text-indent: -999px;
+}
+.bx-next {
+  background-position: left bottom;
+  right: 0;
+}
+.bx-next:hover {
+  background-position: right bottom;
+}
+.bx-prev {
+  background-position: left top;
+  left: 0;
+}
+.bx-prev:hover {
+  background-position: right top;
+}
+
+
+/* Facebook */
+.article__socials-block,
+.dossier__socials-block {
+	width: 500px;
+	margin: 0 auto 70px;
+}
+.article__socials-block iframe,
+.dossier__socials-block iframe {
+	margin: 0 auto;
+}

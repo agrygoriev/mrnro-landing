@@ -42,26 +42,26 @@ function formRentSubmit(id) {
     }
     return false;
 }
-// function readOrientation() {
-//     switch (window.orientation) {
-//         case 0:
-//             return true;
-//             break;
-//             // Portrait
-//         case 180:
-//             return true;
-//             // Portrait (Upside-down)
-//             break;
-//         case -90:
-//             return false;
-//             // Landscape (Clockwise)
-//             break;
-//         case 90:
-//             return false;;
-//             // Landscape  (Counterclockwise)
-//             break;
-//     }
-// }
+function readOrientation() {
+    switch (window.orientation) {
+        case 0:
+            return true;
+            break;
+            // Portrait
+        case 180:
+            return true;
+            // Portrait (Upside-down)
+            break;
+        case -90:
+            return false;
+            // Landscape (Clockwise)
+            break;
+        case 90:
+            return false;;
+            // Landscape  (Counterclockwise)
+            break;
+    }
+}
 $(document).ready(function(){
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
@@ -75,7 +75,7 @@ $(document).ready(function(){
             });
         }
     });
-    // portraitOrientation = readOrientation();
+    portraitOrientation = readOrientation();
     // console.log(portraitOrientation);
     $(window).scroll(function () {
         if(window.scrollY > 0) {
@@ -84,7 +84,8 @@ $(document).ready(function(){
             $('.btn-to-top').hide(100);
         }
     });
-    if(windowWidth <=800) {
+    if(windowWidth <=800 && portraitOrientation) {
+        $('#menu-booking, #menu-route, #menu-logbook, #menu-contacts').hide()
         $(window).scroll(function () {
             // console.log('Scrolled');
             if ($(this).scrollTop() > 1) {
@@ -123,6 +124,15 @@ $(document).ready(function(){
             pager: false
         })
     }
+    if($('.route__place__slider').length){
+        $('.route__place__slider').bxSlider({
+            slideWidth: '750px',
+            pager: false
+        })
+    }
+    // if($('.route__place__slider').hasClass('no-photo')) {
+    //     $('.route__place').
+    // }
     //show and hide rows
     $('.mobile-table-content .arrow').click(function () {
         $(this).toggleClass('open-arrow close-arrow');
@@ -188,7 +198,7 @@ $(document).ready(function(){
         // $('.burger').removeClass('clicked');
     });
     $('.main-menu-link').click(function (ev) {
-        ev.preventDefault();
+        // ev.preventDefault();
         var hrefGoTo = $(this).attr('href');
         $('html, body').animate({scrollTop: $(hrefGoTo).offset().top -70 }, 800);
     })
@@ -221,14 +231,13 @@ $(document).ready(function(){
         $('#form_order #name').val(name);
         $('#phone').val(phone);
         $('#name1').val(name);
-        // var selectOptions =  $("#ordinary option");
-        // selectOptions.each(function () {
-        //     var xyz = $(this).val();
-        //     if (xyz === etap ) {
-        //         $(this).prop('selected', true);
-        //     }
-        // });
-        document.querySelector('#ordinary [value="' + etap + '"]').selected = true;
+        var selectOptions =  $("#ordinary option");
+        selectOptions.each(function () {
+            var xyz = $(this).val();
+            if (xyz === etap ) {
+                $(this).prop('selected', true);
+            }
+        });
         // window.setTimeout(function() {
         $("html, body").animate({ scrollTop: $('#booking').offset().top - 70 }, 800);
         // }, 0);
@@ -237,20 +246,20 @@ $(document).ready(function(){
 
 
     //gallery
-    // $(".fancybox").fancybox({
-    //     touch : {
-    //         vertical : false,  // Allow to drag content vertically
-    //         momentum : true   // Continue movement after releasing mouse/touch when panning
-    //     },
-    //     helpers:{
-    //         overlay:{
-    //             locked:false,
-    //             css : {
-    //                 'background' : 'rgba(42, 42, 42, 0.95)'
-    //             }
-    //         }
-    //     },
-    // });
+    $(".fancybox").fancybox({
+        touch : {
+            vertical : false,  // Allow to drag content vertically
+            momentum : true   // Continue movement after releasing mouse/touch when panning
+        },
+        helpers:{
+            overlay:{
+                locked:false,
+                css : {
+                    'background' : 'rgba(42, 42, 42, 0.95)'
+                }
+            }
+        },
+    });
 
     $('#form_order').submit(function () {
         var _this = $(this);
