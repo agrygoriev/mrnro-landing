@@ -15,7 +15,7 @@ main {
     width: auto;
     height: 740px;
     position: relative;
-    background: url(../img/landing/home-top.jpg) no-repeat;
+    background: url(../images/landing/home-top.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -236,7 +236,7 @@ main .description img {
     margin: 70px auto;
     opacity: .8;
     display: block;
-    background: url("../img/landing/arrow_down.svg");
+    background: url("../images/landing/arrow_down.svg");
     background-size: contain;
 }
 .arrow-down.bounce {
@@ -342,12 +342,12 @@ tr.content .cell {
 }
 .curs-info-block .curs-data .name .name-link {
     display: inline-flex;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
-.curs-info-block .curs-data .name .name-link:before {
+/* .curs-info-block .curs-data .name .name-link:before {
     display: block;
     content: ' ';
-    background: url(../img/landing/anchor.svg) center / 16px auto no-repeat;
+    background: url(../images/landing/anchor.svg) center / 16px auto no-repeat;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -355,7 +355,7 @@ tr.content .cell {
     position: absolute;
     left: 0;
     top: 5px;
-}
+} */
 
 .curs-info-block .trip-description {
     font: 400 12px 'Open Sans', sans-serif;
@@ -429,7 +429,7 @@ tr.content .cell {
     background: #024464;
 }
 .main-footer {
-    background: url(../img/landing/footer-bg.jpg) center top;
+    background: url(../images/landing/footer-bg.jpg) center top;
     height: auto;
     overflow: hidden;
     min-width: 1200px;
@@ -440,14 +440,14 @@ tr.content .cell {
     vertical-align: baseline;
 }
 .fb-icon {
-    background: url(../img/landing/fb-icon.svg) no-repeat;
+    background: url(../images/landing/fb-icon.svg) no-repeat;
     height: 15px;
     width: 8px;
     opacity: .5;
     z-index: 1000;
 }
 .fb-icon-mobile {
-    background: url(../img/landing/fb-icon-mobile.svg) no-repeat;
+    background: url(../images/landing/fb-icon-mobile.svg) no-repeat;
     height: 15px;
     width: 8px;
     margin: 0;
@@ -455,14 +455,14 @@ tr.content .cell {
     z-index: 1000;
 }
 .inst-icon {
-    background: url(../img/landing/inst-logo.svg) no-repeat;
+    background: url(../images/landing/inst-logo.svg) no-repeat;
     height: 14px;
     width: 14px;
     opacity: .5;
     z-index: 1000;
 }
 .inst-icon-mobile {
-    background: url(../img/landing/inst-logo-mobile.svg) no-repeat;
+    background: url(../images/landing/inst-logo-mobile.svg) no-repeat;
     height: 14px;
     width: 14px;
     margin: 0;
@@ -470,14 +470,14 @@ tr.content .cell {
     z-index: 1000;
 }
 .yt-icon {
-    background: url(../img/landing/yt_logo.svg) no-repeat;
+    background: url(../images/landing/yt_logo.svg) no-repeat;
     width: 18px;
     height: 14px;
     opacity: .48;
     z-index: 1000;
 }
 .yt-icon-mobile {
-    background: url(../img/landing/yt_logo-mobile.svg) no-repeat;
+    background: url(../images/landing/yt_logo-mobile.svg) no-repeat;
     width: 18px;
     height: 14px;
     margin: 0;
@@ -524,7 +524,7 @@ tr.content .cell {
     /*display: none;*/
     width: 54px;
     height: 54px;
-    background: url(../img/landing/arrow-up.svg) center no-repeat;
+    background: url(../images/landing/arrow-up.svg) center no-repeat;
     background-size: contain;
     border: none;
     border-radius: 50%;
@@ -596,7 +596,7 @@ and (max-width: 2560px) {
     }
     #phonenum {
         padding: 0;
-        flex-grow: 1;
+        flex-grow: 0;
     }
     .social-networks {
         margin: 0;
@@ -609,7 +609,7 @@ and (max-width: 2560px) {
         display: flex;
         align-items: center;
         top: 0;
-        margin-top: 26px;
+        margin-top: 0;
     }
     .main-header .logo img {
         width: 100%;

@@ -42,6 +42,7 @@ function formRentSubmit(id) {
     }
     return false;
 }
+
 function readOrientation() {
     switch (window.orientation) {
         case 0:
@@ -76,7 +77,7 @@ $(document).ready(function(){
         }
     });
     portraitOrientation = readOrientation();
-    // console.log(portraitOrientation);
+    console.log(portraitOrientation);
     $(window).scroll(function () {
         if(window.scrollY > 0) {
             $('.btn-to-top').show(100);
@@ -84,8 +85,8 @@ $(document).ready(function(){
             $('.btn-to-top').hide(100);
         }
     });
-    if(windowWidth <=800 && portraitOrientation) {
-        $('#menu-booking, #menu-route, #menu-logbook, #menu-contacts').hide()
+    if(windowWidth < 1024) {
+        $('#menu-route, #menu-logbook').hide();
         $(window).scroll(function () {
             // console.log('Scrolled');
             if ($(this).scrollTop() > 1) {
@@ -93,30 +94,30 @@ $(document).ready(function(){
                 $('.menu-wrapper').addClass("mobile-menu-wrapper");
                 // $('.mobile-menu-wrapper').removeClass("menu-wrapper");
                 $('#go-home img').addClass("mobile-logo");
-                $('.main-menu-item').addClass("mobile-menu-item");
+                $('.menu-wrapper .main-menu .main-menu-item').addClass("mobile-menu-item");
                 $('#fb-icon').addClass('fb-icon-mobile');
                 $('#inst-icon').addClass('inst-icon-mobile');
                 $('#yt-icon').addClass('yt-icon-mobile');
             } else {
                 // console.log($(this).scrollTop());
                 $('.menu-wrapper').removeClass("mobile-menu-wrapper");
-                $('.main-menu-item').removeClass("mobile-menu-item");
+                $('.menu-wrapper .main-menu .main-menu-item').removeClass("mobile-menu-item");
                 $('#go-home img').removeClass("mobile-logo");
                 $('#fb-icon').removeClass('fb-icon-mobile');
                 $('#inst-icon').removeClass('inst-icon-mobile');
                 $('#yt-icon').removeClass('yt-icon-mobile');
             }
         });
-        if (window.scrollY > 0) {
-            // console.log(window.scrollY);
-            $('.menu-wrapper').addClass("mobile-menu-wrapper");
-            // $('.mobile-menu-wrapper').removeClass("menu-wrapper");
-            $('#go-home img').addClass("mobile-logo");
-            $('.main-menu-item').addClass("mobile-menu-item");
-            $('#fb-icon').addClass('fb-icon-mobile');
-            $('#inst-icon').addClass('inst-icon-mobile');
-            $('#yt-icon').addClass('yt-icon-mobile');
-        }
+        // if (window.scrollY > 0) {
+        //     // console.log(window.scrollY);
+        //     $('.menu-wrapper').addClass("mobile-menu-wrapper");
+        //     // $('.mobile-menu-wrapper').removeClass("menu-wrapper");
+        //     $('#go-home img').addClass("mobile-logo");
+        //     $('.main-menu-item').addClass("mobile-menu-item");
+        //     $('#fb-icon').addClass('fb-icon-mobile');
+        //     $('#inst-icon').addClass('inst-icon-mobile');
+        //     $('#yt-icon').addClass('yt-icon-mobile');
+        // }
     }
     if($('.travel-slider').length){
         $('.travel-slider').bxSlider({
@@ -153,7 +154,7 @@ $(document).ready(function(){
     //animated scroll to section route
     $(".arrow-down").click(function(ev) {
         ev.preventDefault();
-        var position = $('#route').offset().top - headerHeight;
+        var position = $('.description').offset().top - headerHeight;
         var windowWidth = $(window).width();
         var hrefGoTo = $(this).attr('href');
         window.setTimeout(function() {
@@ -163,7 +164,7 @@ $(document).ready(function(){
 
     //animated scroll to section booking
     $("#menu-booking, #mobile-booking, .overscreen-menu > ul > li > a.btn.primary.h60, .buttons-centered > .btn.primary.h60 ").click(function (ev) {
-        ev.preventDefault();
+        // ev.preventDefault();
         var position = $('#booking').offset().top;
         var windowWidth = $(window).width();
         if (windowWidth <= 800) {
@@ -203,7 +204,7 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(hrefGoTo).offset().top -70 }, 800);
     })
     $('.overscreen-menu ul li a').click(function (ev) {
-        ev.preventDefault();
+        // ev.preventDefault();
         var hrefGoTo = $(this).attr('href');
         // window.setTimeout(function() {
             $('html, body').animate({scrollTop: $(hrefGoTo).offset().top -70 }, 800);
@@ -259,6 +260,12 @@ $(document).ready(function(){
                 }
             }
         },
+        arrows: true,
+        // Clicked on the slide
+        clickSlide: 'close',
+
+        // Clicked on the background (backdrop) element
+        clickOutside: 'close'
     });
 
     $('#form_order').submit(function () {

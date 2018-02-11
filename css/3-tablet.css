@@ -1,6 +1,9 @@
 @media screen
-and (min-width: 600px)
+and (min-width: 601px)
 and (orientation: portrait) {
+    .menu-wrapper {
+        padding: 20px 30px;
+    }
     .main-header > .video-container {
         display: block;
     }
@@ -330,7 +333,7 @@ and (orientation: landscape) {
         align-content: center;
     }
     .overscreen-menu > .mobile-top-nav > .mobile-logo-enlarged {
-        background: url(../img/landing/logo_marinero.svg) no-repeat left;
+        background: url(../images/landing/logo_marinero.svg) no-repeat left;
         width: 90px;
         height: 80px;
         z-index: 1000;
@@ -349,9 +352,9 @@ and (orientation: landscape) {
         /*padding-right: 150px;*/
         /* padding-left: 280px; */
     }
-    .overscreen-menu > .mobile-top-nav > .mobile-top-nav-socials > div > a {
+    /* .overscreen-menu > .mobile-top-nav > .mobile-top-nav-socials > div > a {
 
-    }
+    } */
     .overscreen-menu > .mobile-top-nav >  .burger {
         display: flex;
         flex-direction: column;

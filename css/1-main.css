@@ -117,7 +117,7 @@ img {
 }
 
 .icons-sprite, .select-mask:after, .main-header .logo, .footer-social-wrapper .facebook, .footer-social-wrapper .facebook:hover, .footer-social-wrapper .googleplus, .footer-social-wrapper .googleplus:hover, .footer-social-wrapper .youtube, .footer-social-wrapper .youtube:hover, .footer-social-wrapper .vk, .footer-social-wrapper .vk:hover, .footer-social-wrapper .instagram, .footer-social-wrapper .instagram:hover, .social-links-block .social-link.fb, .social-links-block .social-link.fb:hover, .social-links-block .social-link.gp, .social-links-block .social-link.gp:hover, .social-links-block .social-link.yt, .social-links-block .social-link.yt:hover, .social-links-block .social-link.vk, .social-links-block .social-link.vk:hover, .social-links-block .social-link.inst, .social-links-block .social-link.inst:hover, .social-buttons-block .social-btn.fb:before, .social-buttons-block .social-btn.vk:before, .social-buttons-block .social-btn.vk .heart, .social-buttons-block .social-btn.tweet:before {
-  background: url('../img/landing/icons.png') no-repeat;
+  background: url('../images/landing/icons.png') no-repeat;
 }
 
 .btn {
@@ -757,7 +757,7 @@ table th {
 
 .home-banner-wrapper {
   height: 745px;
-  background: url("../img/landing/home-top.jpg") left top;
+  background: url("../images/landing/home-top.jpg") left top;
   background-repeat: no-repeat;
 }
 .home-banner-wrapper .banner-content {
@@ -1320,7 +1320,7 @@ table th {
   position: absolute;
   width: 23px;
   height: 50px;
-  background-image: url(../img/landing/slider-single.png);
+  background-image: url(../images/landing/slider-single.png);
   top: 47px;
   overflow: hidden;
   text-indent: -999px;
@@ -1344,7 +1344,7 @@ table th {
   position: absolute;
   width: 45px;
   height: 44px;
-  background-image: url(../img/landing/slider-travel.png);
+  background-image: url(../images/landing/slider-travel.png);
   top: 50%;
   margin-top: -22px;
   overflow: hidden;
@@ -2458,7 +2458,7 @@ select._ordinary {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url('../img/landing/icon_select.png') right 10px center no-repeat;
+    background: url('../images/landing/icon_select.png') right 10px center no-repeat;
     cursor: pointer;
 }
 ._rent .custom-select-item:first-child {
@@ -2851,7 +2851,7 @@ padding-left: 5px;
   overflow: hidden !important;
 }
 .gm-style>div>div>div>div{
-  /*width: 282px !important;*/
+  width: 282px !important;
 }
 .gm-style-iw + div{
   right: 5px !important;

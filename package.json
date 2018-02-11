@@ -18,6 +18,8 @@
   "homepage": "https://github.com/agrygoriev/mrnro-landing#readme",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.2.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.23.5",
     "bxslider": "^4.2.13",
     "cssnano": "^3.10.0",
@@ -26,6 +28,7 @@
     "gulp-concat-css": "^3.0.0",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-jshint": "^2.1.0",
     "gulp-minify": "^2.1.0",
     "gulp-postcss": "^7.0.1",
     "gulp-uglify": "^3.0.0",

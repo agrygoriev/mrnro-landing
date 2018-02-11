@@ -155,7 +155,7 @@
         height: 70px;
     }
     .overscreen-menu > .mobile-top-nav > .mobile-logo-enlarged {
-        background: url(../img/landing/logo_marinero.svg) no-repeat;
+        background: url(../images/landing/logo_marinero.svg) no-repeat;
         width: 89px;
         height: 60px;
         z-index: 1000;
